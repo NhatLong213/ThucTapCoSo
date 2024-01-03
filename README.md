@@ -1,11 +1,14 @@
 - Đây là một chương trình C++ để thực hiện các hoạt động cơ bản trên cây tìm kiếm nhị phân (BST - Binary Search Tree). Dưới đây là một báo cáo mô tả chương trình:
+
 Mô Tả Chung:
+
 = Chương trình được viết bằng ngôn ngữ lập trình C++ và thực hiện các thao tác cơ bản trên cây tìm kiếm nhị phân. Cây tìm kiếm nhị phân là một cấu trúc dữ liệu trong đó mỗi nút có tối đa hai nút con
 (nút con trái và nút con phải). Các nút có giá trị nhỏ hơn nút gốc sẽ được đặt ở nút con trái, và các nút có giá trị lớn hơn sẽ được đặt ở nút con phải.
 
 * Mức 1:***
   
 1. Mục Đích và Chức Năng của Chương Trình:
+
 Mục Đích: Chương trình được thiết kế để quản lý cây tìm kiếm nhị phân (BST) và cung cấp các chức năng cơ bản như thêm, tìm kiếm, xóa và in ra cây BST.
 
 Chức Năng Cơ Bản:
@@ -14,10 +17,13 @@ Thêm Node Vào Cây BST: Cho phép người dùng thêm một hoặc nhiều gi
 Tìm Kiếm Node Trong Cây BST: Cho phép người dùng tìm kiếm một giá trị cụ thể trong cây BST.
 Xóa Node Khỏi Cây BST: Cho phép người dùng xóa một giá trị cụ thể khỏi cây BST.
 In Ra Cây BST Hiện Tại: Hiển thị các giá trị trong cây BST theo thứ tự tăng dần.
+
 2. Cấu Trúc Dữ Liệu và Hàm Chức Năng:
+
 Cấu Trúc Node (struct Node):
 
 Lưu trữ thông tin của mỗi node trong cây BST bao gồm giá trị (data), con trái (left), và con phải (right).
+
 Các Hàm Chức Năng Chính:
 
 createNode(int x): Tạo một node mới với giá trị x.
@@ -27,9 +33,12 @@ createNode(int x): Tạo một node mới với giá trị x.
 *minValueNode(Node node)**: Tìm node có giá trị nhỏ nhất trong cây con bên trái của node.
 
 Các Hàm Phụ Trợ:
+
 *inorderTraversal(Node root)**: Duyệt cây theo hình thức "trái - node - phải" và in ra giá trị theo thứ tự tăng dần.
 *insertArray(Node root, vector<int>& arr)**: Thêm một mảng giá trị vào cây BST.
+
 3. Giao Diện Người Dùng và Luồng Thực Thi:
+
 Menu và Lựa Chọn: Hiển thị menu với các lựa chọn cho người dùng.
 Thực Thi Lựa Chọn:
 Thêm Node: Nhập giá trị và thêm vào cây BST.
